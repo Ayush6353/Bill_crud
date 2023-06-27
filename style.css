@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Suez+One&display=swap");
+.main1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 47rem;
+}
+.h1_m1 {
+  font-family: "Pacifico", cursive;
+  font-family: "Suez One", serif;
+}
+
+.row {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.116),
+    0 6px 20px 0 rgba(0, 0, 0, 0.089);
+}
+
+
+.main2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.form-design input{
+  width:100%;
+  padding:2rem;
+}
+.table-design{
+  width: 70%;
+  padding:0 1rem;
+  
+}
+.table-design table{
+  width:100%;
+}
+.table-design table tr {
+  /* border-radius: 1rem; */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.116),
+  0 6px 20px 0 rgba(0, 0, 0, 0.089);
+}
+.table-design table tr td, .table-design table tr th{
+  padding:50px;
+}

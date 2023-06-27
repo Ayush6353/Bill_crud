@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bill js</title>
+</head>
+
+<body>
+  <section class="main1">
+    <h1 class="h1_m1">Calculate Toy Bill</h1>
+    <br />
+    <br />
+    <form class="row g-3">
+      <div class="col-md-12">
+        <label for="qty" class="form-label" >Name</label>
+        <input type="text" class="form-control f_name" id="Name" />
+        <label for="inputEmail4" id="V_name" class="form-label" style="color: red;"></label>
+      </div>
+      <div class="col-md-4">
+        <label for="qty" class="form-label" >Choose you toy</label>
+        <select id="inputState" class="form-select t_toy">
+          <option selected></option>
+          <option>toy car</option>
+          <option>pen</option>
+          <option>Boll</option>
+          <option>toy Dog</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="qty" class="form-label" >Quantity</label>
+        <input type="number" class="form-control q_qty" id="Qty" value="" />
+        <label for="qty" class="form-label" id="V_qte" style="color: red;"></label>
+      </div>
+      <div class="col-4">
+        <label for="qty" class="form-label" >Price</label>
+        <input type="number" class="form-control p_price" id="Price" value=""  />
+        <label for="Price" id="V_price" class="form-label" style="color: red;">
+      </div>
+      <div col-md-12>
+      <input class="pay_o" type="radio" name="season" id="p_pay" value="Online" /> Online
+      <input class="pay_c" type="radio" name="season" id="p_pay" value="Cash" /> Cash
+      <label for="error" class="form-label error" id="error"  style="color: red;"></label>
+    </div>
+    <div>
+      <div class="form-check">
+        <input class="form-check-input c1_box" type="checkbox" name="c_box" value="50" id="checkbox_1"> 50
+      </div>
+      <div class="form-check">
+        <input class="form-check-input c2_box" type="checkbox" name="c_box" value="10" id="checkbox_2">10
+      </div>
+      <br>
+        <label class="form-check-label "  id="V_box"  style="color: red;"></label>
+    </div>
+      <div class="t_total" id="total"></div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="main2">
+    <h1 class="h1_m1">Bill History</h1>
+    <br />
+    <br />
+    <div class="table-design">
+      <table class="list">
+        <tr>
+          <th>No</th>
+          <th>Name</th>
+          <th>Item</th>
+          <th>Pay money</th>
+          <th>checkbox</th>
+          <th>Total Bill</th>
+          <th>edit</th>
+          <th>delete</th>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <script src="first.js"></script>
+</body>
+
+</html>
